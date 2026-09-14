@@ -1,9 +1,7 @@
 package org.review;
 
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 
 public class Java集合框架 {
@@ -21,6 +19,18 @@ public class Java集合框架 {
         linked_list.addFirst("world");
         for(int i=0;i<linked_list.size();++i){
             System.out.println(linked_list.get(i));
+        }
+
+
+        System.out.println("===========");
+        HashSet<String> hash_set = new HashSet<>();
+        hash_set.add("hello");
+        hash_set.add("world");
+        hash_set.add("hello");
+        System.out.println(hash_set);
+        Iterator<String> iterator = hash_set.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
         }
     }
 }
